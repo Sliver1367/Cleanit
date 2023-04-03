@@ -7,9 +7,10 @@ import {getExperts} from "../../firebase/experts-service";
 const ExpertsList = (props) => {
     const [experts, setExperts] = useState([]);
 
+
     useEffect(() => {
         getExperts().then(data => setExperts([...data]))
-    }, []);
+    });
 
     function getComponent(value) {
         switch (value) {

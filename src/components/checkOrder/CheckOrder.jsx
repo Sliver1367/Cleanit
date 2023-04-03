@@ -8,14 +8,13 @@ import {addBusyTime} from "../../firebase/experts-service";
 
 
 const CheckOrder = (props) => {
-
     const dispatch = useDispatch();
     const bookNow = useSelector(state => state.bookNow);
     const currentDate = bookNow.date
     const formattedDate = currentDate.toLocaleDateString();
     const order = {
-        id: props.id,
         name: props.expert.name,
+        profession: props.expert.profession,
         currentDate: formattedDate,
         selectedTime: [props.b9, props.b12, props.b15, props.b17],
         email: auth.currentUser.email
@@ -82,9 +81,8 @@ const CheckOrder = (props) => {
                             onClick={() => {
                                 dispatch(showComponentThankYou())
                                 console.log(order);
-                                ////ADDDDDDDDDDDDDDDDDD
-                                addBusyTime(props.expert.id, ...busyTimeToArray(props.b9, props.b12, props.b15, props.b17)
-                                ).then(r => [])
+                                addBusyTime(props.expert.id, busyTimeToArray(props.b9, props.b12, props.b15, props.b17)
+                                ).then(r => []);
                             }}>Yes, this is my order!
                     </button>
                     <button className={style.button} onClick={() => dispatch(showComponentCheckOrder())}>No, I want

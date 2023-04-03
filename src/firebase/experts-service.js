@@ -19,12 +19,9 @@ export async function getRefForPhoto(name) {
 }
 
 export async function addBusyTime(uid, data) {
-
     await updateDoc(doc(db, "experts", `${uid}`), {
-        busyTime: arrayUnion(data)
-
+        busyTime: arrayUnion(...data)
     })
-
 }
 
 
