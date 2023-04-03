@@ -1,0 +1,39 @@
+
+.cont {
+    font-family: Raleway;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: auto;
+    width: 90%;
+    height: 35vw;
+    margin-top: 0vw;
+    border-radius: 16px;
+    margin-bottom: 2.5vw;
+    padding: 1vw;
+    letter-spacing: 0.5px;
+    margin-left: 0vw;
+    color: #593D3D;
+
+}
+
+::-webkit-scrollbar {
+    width: 0.5vw;
+    display: none;
+}
+
+::-webkit-scrollbar-button {
+    background: transparent;
+    height: 1px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFD836;
+    border-radius: 16px;
+}
+

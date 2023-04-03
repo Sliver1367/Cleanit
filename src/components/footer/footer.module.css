@@ -1,0 +1,32 @@
+.cont {
+    background-color: #F4F5F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 14vw;
+}
+
+.imgLogo {
+    width: 80%;
+}
+
+.leftFooter {
+    margin-left: 8vw;
+}
+
+.rightFooter {
+    margin-right: 8vw;
+}
+
+.address {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: medium;
+    text-align: left;
+    color: #593D3D;
+    margin-right: 8vw;
+    height: 8vw;
+    line-height: 0.4vw;
+}
+
+

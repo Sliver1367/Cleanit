@@ -1,0 +1,113 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+
+.modal {
+    z-index: 99999;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border: 0.2vw #6781EF solid;
+    color: black;
+    background: linear-gradient(90deg, #8DA3FF, #6781EF);
+}
+
+.button {
+    font-family: 'Raleway', bold;
+    margin: 1vw;
+    padding: 0.5vw 1vw;
+    border: none;
+    border-radius: 2vw;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #8DA3FF, #6781EF);
+    border: 3px #FFFFFF solid;
+    font-size: x-large;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #8DA3FF, #6781EF);
+    box-shadow: 1px 1px 1px 1px #6882EF;
+    border: 3px #6882EF solid;
+    font-weight: bold;
+}
+
+.button:active {
+    background: linear-gradient(90deg, #8DA3FF, #6781EF);
+    box-shadow: 3px 3px 3px 3px #5368bd;
+    border: 3px #6882EF solid;
+    font-weight: bold;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    bottom: 2vw;
+    width: 100%;
+    padding: 1vw;
+    margin: 0.3vw;
+}
+
+.input {
+    margin: 0.6vw;
+    padding: 0.6vw;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.inputs {
+    font-family: Raleway;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.header {
+    font-family: 'Raleway', bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.invalidValue {
+    font-weight: normal;
+    color: #FFFFFF;
+    padding: 0px;
+    margin: 0px;
+    font-size: medium;
+    text-shadow: -0 -1px 0 #AD6D6D,
+    0 -1px 0 #AD6D6D,
+    -0 1px 0 #AD6D6D,
+    0 1px 0 #AD6D6D,
+    -1px -0 0 #AD6D6D,
+    1px -0 0 #AD6D6D,
+    -1px 0 0 #AD6D6D,
+    1px 0 0 #AD6D6D,
+    -1px -1px 0 #AD6D6D,
+    1px -1px 0 #AD6D6D,
+    -1px 1px 0 #AD6D6D,
+    1px 1px 0 #AD6D6D,
+    -1px -1px 0 #AD6D6D,
+    1px -1px 0 #AD6D6D,
+    -1px 1px 0 #AD6D6D,
+    1px 1px 0 #AD6D6D;
+}

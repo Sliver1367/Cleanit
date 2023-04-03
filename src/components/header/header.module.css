@@ -1,0 +1,164 @@
+
+.header {
+    position: absolute;
+    top: 0;
+    height: 10vw;
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /*padding-left: 7vw;*/
+    margin: 0.5vw;
+    background-color: transparent;
+
+}
+
+.headerRight {
+    padding: 0.8vw;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+.headerText {
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 55%;
+    color: #593D3D;
+}
+
+.headerHome:hover {
+    color: black;
+}
+
+.headerHome:active {
+    color: black;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.headerBook:hover {
+    color: black;
+}
+
+.headerBook:active {
+    color: black;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.headerJoinOurTeam:hover {
+    color: black;
+}
+
+.headerJoinOurTeam:active {
+    color: black;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.cleanImg {
+    margin-left: 8vw;
+}
+
+.btnSignUp {
+    cursor: pointer;
+    padding: 1vw;
+    background-color: #8DA3FF;
+    color: #FFFFFF;
+    border: 3px #FFFFFF solid;
+    border-radius: 40px;
+    font-size: x-large;
+    margin-right: 3vw;
+    font-family: 'Raleway', bold;
+    font-weight: bold;
+    height: 4vw;
+    width: 8vw;
+}
+
+.btnSignUp:hover {
+    background: linear-gradient(90deg, #8DA3FF, #6781EF);
+    box-shadow: 1px 1px 1px 1px #6882EF;
+    border: 3px #6882EF solid;
+}
+
+.btnSignUp:active {
+    background: linear-gradient(90deg, #8DA3FF, #6781EF);
+    box-shadow: 3px 3px 3px 3px #5368bd;
+    border: 3px #6882EF solid;
+}
+
+.signInLabel {
+    font-family: Raleway;
+    color: #FFFFFF;
+    font-size: x-large;
+}
+
+.signInContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 10vw;
+}
+
+.signInBtn {
+    cursor: pointer;
+    background-color: #8DA3FF;
+    color: #FFFFFF;
+    border: 3px #FFFFFF solid;
+    border-radius: 20px;
+    font-size: medium;
+    font-family: 'Raleway', bold;
+    font-weight: bold;
+    height: 2.5vw;
+}
+
+.signInBtn:hover {
+    background: linear-gradient(90deg, #8DA3FF, #6781EF);
+    box-shadow: 1px 1px 1px 1px #6882EF;
+    border: 3px #6882EF solid;
+}
+
+.signInBtn:active {
+    background: linear-gradient(90deg, #8DA3FF, #6781EF);
+    box-shadow: 3px 3px 3px 3px #5368bd;
+    border: 3px #6882EF solid;
+}
+
+@media (max-width: 480px) {
+    .header {
+        position: absolute;
+        top: 0;
+        height: 10vw;
+        width: 99%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        /*padding-left: 7vw;*/
+        margin: 0.5vw;
+        padding: 0vw;
+        background-color: transparent;
+    }
+
+    .cleanImg {
+        width: 20%;
+        margin: 0vw;
+        padding: 0vw;
+    }
+
+    .headerRight {
+        padding: 0.8vw;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 2vw;
+    }
+}

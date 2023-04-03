@@ -1,0 +1,150 @@
+.cont {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.68vw;
+    border-bottom: 1px #553E3E solid;
+    background-color: white;
+    border-radius: 15px;
+    align-items: center;
+    padding: 5px;
+}
+
+.button {
+    font-family: 'Raleway', bold;
+    margin: 1vw;
+    padding: 0.5vw 1vw;
+    border: none;
+    border-radius: 2vw;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #8DA3FF, #6781EF);
+    border: 3px #FFFFFF solid;
+    font-size: x-large;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #8DA3FF, #6781EF);
+    box-shadow: 1px 1px 1px 1px #6882EF;
+    border: 3px #6882EF solid;
+    font-weight: bold;
+}
+
+.button:active {
+    background: linear-gradient(90deg, #8DA3FF, #6781EF);
+    box-shadow: 3px 3px 3px 3px #5368bd;
+    border: 3px #6882EF solid;
+    font-weight: bold;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40vw;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border: 0.2vw #6781EF solid;
+    color: #593D3D;
+    background: linear-gradient(90deg, #8DA3FF, #6781EF);
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.name {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.prof {
+    margin: 10px;
+    font-size: large;
+    font-weight: normal;
+}
+
+.photoOfExpert {
+    width: 6.5vw;
+    height: 6.5vw;
+    margin-top: -0.5vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    height: 6vw;
+    width: 50%;
+    margin-top: 0.5vw;
+}
+
+.rightText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 5px;
+    align-items: center;
+    width: 50%;
+    /*border: 2px #553E3E solid;*/
+}
+
+.timeBoard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.time {
+    text-align: center;
+    width: 51px;
+    height: 20px;
+    border: 0.5px solid rgba(112, 112, 112, 0.71);
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 2px;
+    margin: 7px;
+    font-family: Raleway;
+}
+
+.header {
+    font-family: 'Raleway', bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.dateField {
+    margin: 5px;
+    font-size: large;
+    font-weight: normal;
+}
+
+.price {
+    font-weight: bolder;
+}
+
+.chosenData {
+    font-weight: bolder;
+}

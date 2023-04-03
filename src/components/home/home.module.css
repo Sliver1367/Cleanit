@@ -1,0 +1,150 @@
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        background: #6882EF;
+        margin-top: 5.9vw;
+        padding-bottom: 2vw;
+        padding-top: 2vw;
+        color: #FFFFFF;
+
+
+    }
+
+    .scrollToTop {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 3vw; /* Place the button at the bottom of the page */
+        right: 2vw; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: 1px white solid;
+        background-color: #6882EF; /* Set a background color */
+        color: #FFFFFF; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 3px; /* Some padding */
+        border-radius: 60px; /* Rounded corners */
+        width: 2.7vw;
+        text-align: center;
+        font-size: 2.1vw;
+    }
+
+    .scrollToTop:hover {
+        background-color: rgba(104, 130, 239, 0.64); /* Add a dark-grey background on hover */
+        color: #FFFFFF;
+    }
+
+    .scrollToTop:active {
+        background-color: rgba(104, 130, 239, 0.64); /* Add a dark-grey background on hover */
+        color: #FFFFFF;
+        border: none;
+    }
+
+    .home {
+        background-color: #F4F5F7;
+        background-image: url("../../img/Blue wave 2x.png");
+        float: right;
+        background-position-x: right;
+        background-position-y: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        margin-top: -8px;
+        padding-top: 10vw;
+        padding-bottom: 0vw;
+        height: 30vw;
+    }
+
+    .wetFloor {
+        float: right;
+        padding-right: 4vw;
+    }
+
+    .homeText {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        margin-left: 9vw;
+        margin-top: -2.1vw;
+        width: 25%;
+        font-family: 'Raleway';
+        font-weight: bold;
+        font-size: 480%;
+
+    }
+
+    .alwaysHomeText {
+
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        margin-bottom: -2.3vw;
+    }
+
+    .alwaysClean {
+
+        margin-bottom: 0px;
+        color: #FFD836;
+        font-size: 100%;
+    }
+
+    .homeOffice {
+        margin-top: -0.8vw;
+        padding-top: 0px;
+        color: #6882EF;
+        font-size: 90%;
+        letter-spacing: 1px;
+    }
+
+    .btnBookNow {
+        cursor: pointer;
+        margin-left: 3vw;
+        margin-top: 1.5vw;
+        padding: 1vw;
+        color: #FFFFFF;
+        background: linear-gradient(90deg, #8DA3FF, #6781EF);
+        border: 3px #FFFFFF solid;
+        border-radius: 50px;
+        font-size: xx-large;
+        margin-right: 100px;
+        font-family: 'Raleway', bold;
+        font-weight: bold;
+    }
+
+    .btnBookNow:hover {
+        background: linear-gradient(90deg, #8DA3FF, #6781EF);
+        box-shadow: 1px 1px 1px 1px #6882EF;
+        border: 3px #6882EF solid;
+    }
+
+    .btnBookNow:active {
+        background: linear-gradient(90deg, #8DA3FF, #6781EF);
+        box-shadow: 3px 3px 3px 3px #5368bd;
+        border: 3px #6882EF solid;
+    }
+
+    .mainText {
+        font-size: 1vw;
+        font-weight: 600;
+        color: #593D3D;
+        padding-bottom: -1vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        display: none;
+    }
+
+    .home {
+        display: none;
+    }
+
+    .wetFloor {
+        display: none;
+    }
+
+    .homeText {
+        display: none;
+    }
+}
